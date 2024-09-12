@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Mongo数据库</title>
+      <link href="//custom-link/"/>
+      <url>//custom-link/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MongoDB-数据库简介"><a href="#MongoDB-数据库简介" class="headerlink" title="MongoDB 数据库简介"></a>MongoDB 数据库简介</h1><pre><code>    NoSQL    “NoSQL” ⼀词最早于 1998 年被⽤于⼀个轻量级的关系数据库的名字    随着 web2.0 的快速发展， NoSQL 概念在 2009 年被提了出来    NoSQL 在 2010 年⻛⽣⽔起， 现在国内外众多⼤⼩⽹站， 如 facebook、 google、 淘宝、 京东、 百度等， 都在使⽤ nosql 开发⾼性能的产品    对于⼀名程序员来讲， 使⽤ nosql 已经成为⼀条必备技能    NoSQL 最常⻅的解释是 “non-relational”， “Not Only SQL” 也被很多⼈接受， 指的是⾮关系型的数据库    mongoDB 的优势    易扩展： NoSQL 数据库种类繁多， 但是⼀个共同的特点都是去掉关系数据库的关系型特性。 数据之间⽆关系， 这样就⾮常容易扩展    ⼤数据量， ⾼性能： NoSQL 数据库都具有⾮常⾼的读写性能， 尤其在⼤数据量下， 同样表现优秀。 这得益于它的⽆关系性， 数据库的结构简单    灵活的数据模型： NoSQL ⽆需事先为要存储的数据建⽴字段， 随时可以存储⾃定义的数据格式。 ⽽在关系数据库⾥， 增删字段是⼀件⾮常麻烦的事情。 如果是⾮常⼤数据量的表， 增加字段简直就是⼀个噩梦    mongoDB 使用注意点    mongodb 一般用来存储 json 数据，存储在磁盘中（redis 是使用缓存），mogodb 的读写速度比 redis 要慢，但是会比 mysql 要快    mongodb 一般存储在 JavaScript 文件之中（相当于 sql 语句存放在.sql 文件中一样，同样的 redis 一般放在 shell 文件中）    如果大家的版本是高于 3 版本以上，命令需要小写～～    mongodb 有自动补全功能    端口：27017    关于数据库的基础命令</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mongo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>这是一篇新的博文</title>
+      <link href="/2024/09/10/booknote/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%96%B0%E7%9A%84%E5%8D%9A%E6%96%87/"/>
+      <url>/2024/09/10/booknote/%E8%BF%99%E6%98%AF%E4%B8%80%E7%AF%87%E6%96%B0%E7%9A%84%E5%8D%9A%E6%96%87/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Ubnutu-下安装Docker"><a href="#Ubnutu-下安装Docker" class="headerlink" title="Ubnutu 下安装Docker"></a>Ubnutu 下安装Docker</h1><h2 id="1-下载"><a href="#1-下载" class="headerlink" title="1. 下载"></a>1. 下载</h2><ul><li>官方网址</li><li>具体操作</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Liunx </category>
+          
+          <category> Ubuntu </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Docker </tag>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
