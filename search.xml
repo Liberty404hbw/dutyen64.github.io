@@ -5,8 +5,8 @@
     
     <entry>
       <title>Mongo数据库</title>
-      <link href="/dutyen64/2024/09/12/booknote/Mongo%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-      <url>/dutyen64/2024/09/12/booknote/Mongo%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+      <link href="/2024/09/12/booknote/Mongo%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <url>/2024/09/12/booknote/Mongo%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
       
         <content type="html"><![CDATA[<h1 id="MongoDB-数据库"><a href="#MongoDB-数据库" class="headerlink" title="MongoDB 数据库"></a>MongoDB 数据库</h1><h2 id="1-MongoDB-宝藏网址"><a href="#1-MongoDB-宝藏网址" class="headerlink" title="1. MongoDB 宝藏网址"></a>1. MongoDB 宝藏网址</h2><ul><li>MongoDB中文文档： <a href="https://www.mongodb.com/zh-cn/docs/">https://www.mongodb.com/zh-cn/docs/</a></li><li>MongoDB中文手册：<a href="https://docs.mongoing.com/">https://docs.mongoing.com/</a></li><li>MongoDB应用指南：<a href="https://dunwu.github.io/db-tutorial/pages/3288f3/#%E7%AE%80%E4%BB%8B">https://dunwu.github.io/db-tutorial/pages/3288f3/#%E7%AE%80%E4%BB%8B</a></li></ul><h2 id="2-Mongo查询"><a href="#2-Mongo查询" class="headerlink" title="2. Mongo查询"></a>2. Mongo查询</h2><ul><li>聚合操作</li></ul><table><thead><tr><th>步骤</th><th>作用</th><th>SQL 等价运算符</th></tr></thead><tbody><tr><td><code>$match</code></td><td>过滤</td><td><code>WHERE</code></td></tr><tr><td><code>$project</code></td><td>投影</td><td><code>AS</code></td></tr><tr><td><code>$sort</code></td><td>排序</td><td><code>ORDER BY</code></td></tr><tr><td><code>$group</code></td><td>分组</td><td><code>GROUP BY</code></td></tr><tr><td><code>$skip</code> &#x2F; <code>$limit</code></td><td>结果限制</td><td><code>SKIP</code> &#x2F; <code>LIMIT</code></td></tr><tr><td><code>$lookup</code></td><td>左外连接</td><td><code>LEFT OUTER JOIN</code></td></tr><tr><td><code>$unwind</code></td><td>展开数组</td><td>N&#x2F;A</td></tr><tr><td><code>$graphLookup</code></td><td>图搜索</td><td>N&#x2F;A</td></tr><tr><td><code>$facet</code> &#x2F; <code>$bucket</code></td><td>分面搜索</td><td>N&#x2F;A</td></tr></tbody></table>]]></content>
       
@@ -30,8 +30,8 @@
     
     <entry>
       <title>Ubuntu下安装Docker</title>
-      <link href="/dutyen64/2024/09/10/booknote/Ubuntu%E4%B8%8B%E5%AE%89%E8%A3%85Docker/"/>
-      <url>/dutyen64/2024/09/10/booknote/Ubuntu%E4%B8%8B%E5%AE%89%E8%A3%85Docker/</url>
+      <link href="/2024/09/10/booknote/Ubuntu%E4%B8%8B%E5%AE%89%E8%A3%85Docker/"/>
+      <url>/2024/09/10/booknote/Ubuntu%E4%B8%8B%E5%AE%89%E8%A3%85Docker/</url>
       
         <content type="html"><![CDATA[<h1 id="Ubnutu-下安装Docker"><a href="#Ubnutu-下安装Docker" class="headerlink" title="Ubnutu 下安装Docker"></a>Ubnutu 下安装Docker</h1><h2 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h2><ul><li>官方文档: <a href="https://docs.docker.com/desktop/install/ubuntu/">https://docs.docker.com/desktop/install/ubuntu/</a></li><li>终端执行步骤：<pre><code>1、arch  #查看系统内核2、lsb_release -a  #查看系统2.1、curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg  #载Docker的GPG密钥2.2、echo &quot;deb [arch=x86_64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable edge test&quot; | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null3、sudo add-apt-repository &quot;deb [arch=x86_64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable edge test&quot;  #根据系统内核修改[arch=XXXX]4、sudo apt-get remove docker docker-engine docker.io containerd runc  #卸载老版本docker5、sudo apt-get update  #更新apt源6、sudo apt-get install \        ca-certificates \    curl \    gnupg \    lsb-release    #安装4个包7、curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg   #添加软件源的 GPG 密钥8、echo \    &quot;deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \    $(lsb_release -cs) stable&quot; | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null    #向 sources.list 中添加 Docker 软件源9、sudo apt-get update  #更新apt10、sudo apt-get install docker-ce docker-ce-cli containerd.io   #安装docker-ce11、docker --version   #安装成功，查看docker版本12、sudo docker run hello-world   #验证安装成功与否，docker.com下载镜像，然后运行</code></pre></li></ul>]]></content>
       
