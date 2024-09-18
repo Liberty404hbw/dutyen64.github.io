@@ -1444,8 +1444,8 @@ canvas:not(#ribbon-canvas),
   --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
-  --hr-border: #a4d8fa;
-  --hr-before-color: #80c8f8;
+  --hr-border: #d2ebfd;
+  --hr-before-color: #bfe4fb;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
   --search-a-color: #4c4948;
@@ -1761,7 +1761,7 @@ figure.highlight pre .javascript .function {
 }
 #article-container code {
   padding: 2px 4px;
-  background: rgba(27,31,35,0.05);
+  background: #bfefff;
   color: #f47466;
 }
 #article-container pre {
@@ -2076,7 +2076,7 @@ figure.highlight pre .javascript .function {
   border-color: var(--pseudo-hover);
 }
 .article-sort-item-time {
-  color: #858585;
+  color: #4d4d4d;
   font-size: 95%;
 }
 .article-sort-item-time time {
@@ -2135,7 +2135,7 @@ figure.highlight pre .javascript .function {
 }
 .category-lists .category-list .category-list-count {
   margin-left: 8px;
-  color: #858585;
+  color: #4d4d4d;
 }
 .category-lists .category-list .category-list-count:before {
   content: '(';
@@ -2487,7 +2487,7 @@ figure.highlight pre .javascript .function {
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
   margin: 6px 0;
-  color: #858585;
+  color: #4d4d4d;
   font-size: 0.9em;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .post-meta-date {
@@ -2509,7 +2509,7 @@ figure.highlight pre .javascript .function {
   margin: 0 4px;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a {
-  color: #858585;
+  color: #4d4d4d;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap a:hover {
   color: #49b1f5;
@@ -2701,7 +2701,7 @@ h1.page-title + .tag-cloud-list {
 #aside-content .aside-list > .aside-list-item .content > time,
 #aside-content .aside-list > .aside-list-item .content > .name {
   display: block;
-  color: #858585;
+  color: #4d4d4d;
   font-size: 85%;
 }
 #aside-content .aside-list > .aside-list-item .content > .title,
@@ -3357,7 +3357,7 @@ h1.page-title + .tag-cloud-list {
   content: '';
 }
 #page-header.full_page {
-  height: 200px;
+  height: 300px;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
@@ -3890,7 +3890,7 @@ h1.page-title + .tag-cloud-list {
   text-align: justify;
 }
 #article-container a {
-  color: #49b1f5;
+  color: #2c73d2;
 }
 #article-container a:hover {
   text-decoration: underline;
@@ -5813,7 +5813,7 @@ blockquote.pullquote.right {
   box-shadow: none;
 }
 [data-theme='dark'] #article-container .note code {
-  background: rgba(27,31,35,0.05);
+  background: #bfefff;
 }
 [data-theme='dark'] #article-container .aplayer {
   filter: brightness(0.8);
