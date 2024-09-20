@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>正则表达式符号解释</title>
+      <link href="/2024/09/20/booknote/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AC%A6%E5%8F%B7%E8%A7%A3%E9%87%8A/"/>
+      <url>/2024/09/20/booknote/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AC%A6%E5%8F%B7%E8%A7%A3%E9%87%8A/</url>
+      
+        <content type="html"><![CDATA[<h1 id="正则表达式教程"><a href="#正则表达式教程" class="headerlink" title="正则表达式教程"></a>正则表达式教程</h1><ul><li><strong>正则表达式在线测试:   <a href="https://regexr-cn.com/">https://regexr-cn.com/</a></strong></li><li><strong>正则表达式30分钟入门教程:   <a href="https://deerchao.cn/tutorials/regex/regex.htm">https://deerchao.cn/tutorials/regex/regex.htm</a></strong></li><li><img src="/images/regt.png" alt="入门教程" title="入门教程"></li></ul><h1 id="正则表达式符号解释"><a href="#正则表达式符号解释" class="headerlink" title="正则表达式符号解释"></a>正则表达式符号解释</h1><table><thead><tr><th>符号&#x2F;语法</th><th>说明</th></tr></thead><tbody><tr><td><code>\</code></td><td>将下一个字符标记为特殊字符、文本、反向引用或八进制转义符。例如：<code>n</code> 匹配字符 “n”，<code>\n</code> 匹配换行符。序列 <code>\\</code> 匹配 “&quot;，<code>\(</code> 匹配 “(“。</td></tr><tr><td><code>^</code></td><td>匹配输入字符串的开始位置。如果设置了 <code>RegExp</code> 对象的 <code>Multiline</code> 属性，<code>^</code> 还会与 <code>\n</code> 或 <code>\r</code> 之后的位置匹配。</td></tr><tr><td><code>$</code></td><td>匹配输入字符串的结束位置。如果设置了 <code>RegExp</code> 对象的 <code>Multiline</code> 属性，<code>$</code> 还会与 <code>\n</code> 或 <code>\r</code> 之前的位置匹配。</td></tr><tr><td><code>*</code></td><td>匹配前面的子表达式零次或多次。例如，<code>zo*</code> 可以匹配 “z” 以及 “zoo”。<code>*</code> 等价于 <code>&#123;0,&#125;</code>。</td></tr><tr><td><code>+</code></td><td>匹配前面的子表达式一次或多次。例如，<code>zo+</code> 可以匹配 “zo” 以及 “zoo”，但不能匹配 “z”。<code>+</code> 等价于 <code>&#123;1,&#125;</code>。</td></tr><tr><td><code>?</code></td><td>匹配前面的子表达式零次或一次。例如，<code>do(es)?</code> 可以匹配 “do” 或 “does”。<code>?</code> 等价于 <code>&#123;0,1&#125;</code>。</td></tr><tr><td><code>&#123;n&#125;</code></td><td>n 是非负整数。匹配确定的 n 次。例如，<code>o&#123;2&#125;</code> 不能匹配 “Bob” 中的 “o”，但是能匹配 “food” 中的两个 “o”。</td></tr><tr><td><code>&#123;n,&#125;</code></td><td>n 是非负整数。至少匹配 n 次。例如，<code>o&#123;2,&#125;</code> 不能匹配 “Bob” 中的 “o”，但能匹配 “foooood” 中的所有 “o”。</td></tr><tr><td><code>&#123;n,m&#125;</code></td><td>m 和 n 为非负整数，且 <code>n &lt;= m</code>。最少匹配 n 次，最多匹配 m 次。例如，<code>o&#123;1,3&#125;</code> 将匹配 “fooooood” 中的前三个 “o”。</td></tr><tr><td><code>?</code></td><td>当紧跟在任何其他限制符 (*, +, ?, {n}, {n,}, {n,m}) 后面时，匹配模式是非贪婪的。非贪婪模式匹配尽可能少的字符串，而默认的贪婪模式匹配尽可能多的字符串。例如，对于字符串 “oooo”，<code>o+?</code> 将匹配单个 “o”，而 <code>o+</code> 将匹配所有 “o”。</td></tr><tr><td><code>.</code></td><td>匹配除换行符 <code>\n</code> 之外的任何单个字符。要匹配包括 <code>\n</code> 在内的任何字符，请使用 <code>[\s\S]</code>。</td></tr><tr><td><code>(pattern)</code></td><td>匹配 <code>pattern</code> 并捕获该匹配的子表达式。</td></tr><tr><td><code>(?:pattern)</code></td><td>匹配 <code>pattern</code> 但不捕获匹配结果，这意味着这是一个非捕获匹配，不能通过反向引用获取匹配的子字符串。</td></tr><tr><td><code>(?=pattern)</code></td><td>执行正向前瞻匹配，匹配搜索字符串中某个位置后面的字符。</td></tr><tr><td><code>(?!pattern)</code></td><td>执行负向前瞻匹配，确保要匹配的字符串不以 <code>pattern</code> 开头。</td></tr><tr><td>&#96;x</td><td>y&#96;</td></tr><tr><td><code>[xyz]</code></td><td>字符集合。匹配方括号内的任意字符。例如，<code>[abc]</code> 可以匹配 “plain” 中的 “a”。</td></tr><tr><td><code>[^xyz]</code></td><td>负值字符集合。匹配不在方括号内的任意字符。例如，<code>[^abc]</code> 可以匹配 “plain” 中的 “p”。</td></tr><tr><td><code>[a-z]</code></td><td>字符范围。匹配指定范围内的任意字符。例如，<code>[a-z]</code> 可以匹配 “a” 到 “z” 范围内的任意小写字母。</td></tr><tr><td><code>[^a-z]</code></td><td>负值字符范围。匹配任何不在指定范围内的任意字符。</td></tr><tr><td><code>\b</code></td><td>匹配一个单词边界，即单词和空格间的位置。</td></tr><tr><td><code>\B</code></td><td>匹配非单词边界。</td></tr><tr><td><code>\d</code></td><td>匹配一个数字字符。等价于 <code>[0-9]</code>。</td></tr><tr><td><code>\D</code></td><td>匹配一个非数字字符。等价于 <code>[^0-9]</code>。</td></tr><tr><td><code>\f</code></td><td>匹配一个换页符。等价于 <code>\x0c</code> 和 <code>\cL</code>。</td></tr><tr><td><code>\n</code></td><td>匹配一个换行符。等价于 <code>\x0a</code> 和 <code>\cJ</code>。</td></tr><tr><td><code>\r</code></td><td>匹配一个回车符。等价于 <code>\x0d</code> 和 <code>\cM</code>。</td></tr><tr><td><code>\s</code></td><td>匹配任何空白字符，包括空格、制表符、换页符等。等价于 <code>[\f\n\r\t\v]</code>。</td></tr><tr><td><code>\S</code></td><td>匹配任何非空白字符。等价于 <code>[^ \f\n\r\t\v]</code>。</td></tr><tr><td><code>\t</code></td><td>匹配一个制表符。等价于 <code>\x09</code> 和 <code>\cI</code>。</td></tr><tr><td><code>\v</code></td><td>匹配一个垂直制表符。等价于 <code>\x0b</code> 和 <code>\cK</code>。</td></tr><tr><td><code>\w</code></td><td>匹配任何字母数字字符，包括下划线。等价于 <code>[A-Za-z0-9_]</code>。</td></tr><tr><td><code>\W</code></td><td>匹配任何非字母数字字符。等价于 <code>[^A-Za-z0-9_]</code>。</td></tr><tr><td><code>\num</code></td><td>匹配 <code>num</code>，其中 <code>num</code> 是一个正整数，表示对前面捕获的子表达式的引用。例如，<code>(.)\1</code> 匹配两个连续的相同字符。</td></tr><tr><td><code>\n</code></td><td>标识一个八进制转义值或反向引用。</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 正则表达式 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> re </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>私密文章</title>
       <link href="/2024/09/14/booknote/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/"/>
       <url>/2024/09/14/booknote/%E5%8A%A0%E5%AF%86%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/</url>
